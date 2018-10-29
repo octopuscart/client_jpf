@@ -140,7 +140,7 @@ $this->load->view('layout/header');
                                             <div class="tab-pane fade active in"  id="size_standard">
 
 
-                                                
+
                                                 <div class="row">
                                                     <?php
                                                     $this->load->view('Cart/sizes', array('vtype' => 'items'));
@@ -288,14 +288,12 @@ $this->load->view('layout/header');
 
 
                                                 <div class="contact-us-right">
-                                                       <b>Send to:</b><br/>
-                                                    B & C, G/F, 
-                                                    Comfort Building, 
-                                                    86-88A Nathan Road,<br/>
-                                                    Tsim Sha Tsui, 
-                                                    Kowloon, Hong Kong<br/>
-                                                    <i class="fa fa-envelope"></i>  shaniel@netvigator.com<br/>
-                                                    <i class="fa fa-phone"></i> +(852) 2730 1251 
+                                                    <b>Send to:</b><br/>
+                                                    Shop# 13, G/F, Wing Lee Building,<br/>
+                                                    27-33 Kimberley Rd, Tsim Sha Tsui,<br/>
+                                                    Hong Kong<br/>
+                                                    <i class="fa fa-envelope"></i>  john@perfectfashion.com.hk<br/>
+                                                    <i class="fa fa-phone"></i> +(852) 6626 4429  
 
                                                 </div>
                                                 </p>

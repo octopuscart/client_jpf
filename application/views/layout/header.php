@@ -113,7 +113,7 @@
                 <div class="header-top">
                     <div class="container">
                         <div class="top-left">
-                            <a href="#">   <i class="glyphicon glyphicon-phone" aria-hidden="true"></i> +852 6626 4429</a>
+                            <a href="#">   <i class="glyphicon glyphicon-phone" aria-hidden="true"></i> +(852) 6626 4429</a>
 
                             <a href="#" style="margin-left: 10px;"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> john@perfectfashion.com.hk</a>
                         </div>
@@ -153,19 +153,19 @@
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Now<b class="caret"></b></a>
                                                 <ul class="dropdown-menu   singlemenu">
-                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirt</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suit</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jacket</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pant</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirts</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suits</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jackets</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pants</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogue <b class="caret"></b></a>
                                                 <ul class="dropdown-menu   singlemenu">
-                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirt</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suit</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jacket</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pant</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirts</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suits</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jackets</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pants</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="<?php echo site_url('Shop/clients'); ?>">Our Clients </a></li>

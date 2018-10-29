@@ -3,6 +3,13 @@ $this->load->view('layout/header');
 ?>
 
 <style>
+    
+    
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    font-size: 1em;
+    color: #000;
+    border-top: none !important;
+}
     .cartbutton{
         width: 100%;
         padding: 6px;
@@ -83,8 +90,8 @@ $this->load->view('layout/header');
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                <div class="panel1 panel-default">
-                    <div class="panel1-heading" role="tab" id="headingOne">
+                <div class="panel panel-default">
+                    <div class="panel-heading1" role="tab" id="headingOne">
                         <h4 class=" r_corners wrapper  bg_light_2  color_dark bg_gradient color_light">
                             <span class="fa-stack">
                                 <i class="fa fa-shopping-cart fa-stack-1x"></i>
@@ -95,7 +102,7 @@ $this->load->view('layout/header');
                     <div class="panel-body1">
 
                         <div class="clearfix"></div>
-                        <table class="table_type_2 responsive_table w_full t_align_l">
+                        <table class="table table-hover">
                             <thead>
                                 <tr class="bg_light_2 color_dark">
 
@@ -114,14 +121,14 @@ $this->load->view('layout/header');
                                         </a>
                                     </td>
                                     <td data-title="Description">
-                                        <h6 class="m_bottom_5"><a href="#" class="color_dark tr_all">{{product.title}} - {{product.item_name}}</a></h6>
+                                        <h6 class="m_bottom_5"><a href="#" class="color_dark tr_all" style="font-size: 20px;">{{product.title}} - {{product.item_name}}</a></h6>
                                         <p class="fw_light">{{product.attrs}}</p>
                                     </td>
                                     <td data-title="Price">{{product.price|currency:" "}}</td>
                                     <td data-title="Quantity" >
                                         {{product.quantity}}
 
-                                    <td data-title="Total" class="fw_ex_bold color_dark ">
+                                    <td  data-title="Total" class="fw_ex_bold color_dark ">
                                         {{product.total_price|currency:" "}}
                                     </td>
 
@@ -133,12 +140,12 @@ $this->load->view('layout/header');
                                     <td colspan="4" class="v_align_m">
                                         <div class="d_table w_full">
 
-                                            <div class="v_align_m d_table_cell d_xs_block f_none t_align_r fw_ex_bold color_pink t_xs_align_c">
+                                            <div class="v_align_m d_table_cell d_xs_block f_none t_align_r fw_ex_bold color_pink t_xs_align_c" style="text-align: right;font-size: 20px;">
                                                 Total:		
                                             </div>
                                         </div>
                                     </td>
-                                    <td colspan="2" class="fw_ex_bold color_pink v_align_m">{{globleCartData.total_price|currency:" "}}</td>
+                                    <td  class="fw_ex_bold color_pink v_align_m" style="font-size: 20px;">{{globleCartData.total_price|currency:" "}}</td>
                                 </tr>
 
                                 <tr>

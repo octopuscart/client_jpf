@@ -18,15 +18,6 @@ $this->load->view('layout/header');
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/bootstrap.vertical-tabs.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/style_custome.css">
 <style>
-     .tabs-left>li.active>a, .tabs-left>li.active>a:focus, .tabs-left>li.active>a:hover {
-    color: #555;
-    cursor: default;
-     background: #0d59af!important; 
-    border: 1px solid #000;
-     }
-     .media-body{
-        padding: 0px 5px;
-    }
     .product_image_back {
         background-size: contain!important;
         background-repeat: no-repeat!important;

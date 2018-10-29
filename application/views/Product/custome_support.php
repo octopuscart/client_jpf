@@ -35,7 +35,7 @@
     </div>
     <div class="customization_items">
         <ul class="nav nav-tabs tabs-left"> 
-            <li class="{{$index == 0?'active':''}}" ng-repeat="k in keys" ng-if="k.type == 'main'">
+            <li class="{{$index == 0?'active':''}}" ng-repeat="k in keys" ng-if="k.type == 'main'" ng-click="changeViews(k.viewtype)">
                 <a href="#custome{{$index}}" data-toggle="tab"  >
                     <div class="media"  style="cursor:pointer"> 
                         <div class="media-left media-middle mobile_view_element_tab">

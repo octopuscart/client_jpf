@@ -124,35 +124,33 @@ $this->load->view('layout/header');
     <!--new-arrivals-->
     <div class="new-arrivals-w3agile">
         <div class="container">
-            <h2 class="tittle">New Arrivals in Suits</h2>
+            <h2 class="tittle">New Arrivals in Shirts</h2>
             <div class="arrivals-grids">
-                <?php for ($i = 1; $i < 5; $i++) { ?>
-
-                    <div class="col-md-3 arrival-grid simpleCart_shelfItem">
+                <?php
+                foreach ($product_home_slider_bottom['home_slider'] as $key => $value) {
+                    ?>
+                    <div class="col-md-3 cap-left simpleCart_shelfItem">
                         <div class="grid-arr">
                             <div  class="grid-arrival">
                                 <figure>		
-                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal12">
+                                    <a href="#">
                                         <div class="grid-img">
-                                            <img  src="<?php echo base_url(); ?>assets/theme/dummyfab/suit/<?php echo $i; ?>.png" class="img-responsive" alt="">
+                                            <img  src="<?php echo custome_image_server . "/coman/output/"; ?><?php echo $value['folder']; ?>/cutting20001.png" class="img-responsive" alt="" style="height: 245px;">
                                         </div>
-                                        <!--                                    <div class="grid-img">
-                                                                                <img  src="<?php echo base_url(); ?>assets/theme/images/p5.jpg" class="img-responsive"  alt="">
-                                                                            </div>			-->
+
                                     </a>		
                                 </figure>	
                             </div>
-                            <div class="man">
-                                <h6><a href="#">Super 110s Wool </a></h6>
-                                <span class="size"><?php echo "JPFSU00" . $i ?></span>
-                                <p ><em class="item_price">HK$ 1700</em></p>
-                                <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+
+                            <div class="women">
+                                <h6><a href=""><?php echo $value['title']; ?> </a></h6>
+                                <span class="size"><?php echo $value['short_description']; ?> </span>
+                                <p ><em class="item_price">{{<?php echo $shirtcustome->price; ?>|currency:"<?php echo globle_currency; ?> "}}</em></p>
+                                <a href="<?php echo site_url("Product/customizationRedirect/" . $shirtcustome->id) ?>/<?php echo $value['id']; ?>" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
                             </div>
                         </div>
                     </div>
-
                 <?php } ?>
-
                 <div class="clearfix"></div>
             </div>
         </div>
@@ -175,22 +173,25 @@ $this->load->view('layout/header');
 
 
     <!--Products-->
+    <!--Products-->
     <div class="product-agile">
         <div class="container">
-            <h3 class="tittle1"> New Fabrics In Shirts</h3>
+            <h3 class="tittle1"> New Fabrics In Suits</h3>
             <div class="slider">
                 <div class="callbacks_container">
                     <ul class="rslides" id="slider">
                         <li>	 
                             <div class="caption">
-                                <?php for ($i = 1; $i < 5; $i++) { ?>
+                                <?php
+                                foreach ($product_home_slider_bottom['home_bottom'] as $key => $value) {
+                                    ?>
                                     <div class="col-md-3 cap-left simpleCart_shelfItem">
                                         <div class="grid-arr">
                                             <div  class="grid-arrival">
                                                 <figure>		
                                                     <a href="#">
                                                         <div class="grid-img">
-                                                            <img  src="<?php echo base_url(); ?>assets/theme/dummyfab/shirt/<?php echo $i; ?>.png" class="img-responsive" alt="">
+                                                            <img  src="<?php echo custome_image_server . "/coman/output/"; ?><?php echo $value['folder']; ?>/cutting20001.png" class="img-responsive" alt="">
                                                         </div>
 
                                                     </a>		
@@ -198,10 +199,10 @@ $this->load->view('layout/header');
                                             </div>
 
                                             <div class="women">
-                                                <h6><a href="single.html">2 Ply 100% Cotton </a></h6>
-                                                <span class="size"><?php echo "JPFSH00" . $i ?> </span>
-                                                <p ><em class="item_price">$220.00</em></p>
-                                                <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+                                                <h6><a href=""><?php echo $value['title']; ?> </a></h6>
+                                                <span class="size"><?php echo $value['short_description']; ?> </span>
+                                                <p ><em class="item_price">{{<?php echo $suitcustome->price; ?>|currency:"<?php echo globle_currency; ?> "}}</em></p>
+                                                <a href="<?php echo site_url("Product/customizationRedirect/" . $suitcustome->id) ?>/<?php echo $value['id']; ?>" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
                                             </div>
                                         </div>
                                     </div>

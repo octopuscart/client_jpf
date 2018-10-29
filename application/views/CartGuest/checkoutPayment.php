@@ -105,7 +105,7 @@ $this->load->view('layout/header');
                                 <i class="ion-bag fa-stack-1x "></i>
                             </span>  Payment Method
                             <span class="process_block">
-                                PayPal
+                                 Bank Transfer
                             </span> 
                         </h4>
                     </div>

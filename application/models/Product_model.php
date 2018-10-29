@@ -549,11 +549,9 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
         if ($order_details) {
             $order_no = $order_details['order_data']->order_no;
             $this->email->set_newline("\r\n");
-            $this->email->from($emailsender, $sendername);
+            $this->email->from(email_bcc, $sendername);
             $this->email->to($order_details['order_data']->email);
             $this->email->bcc(email_bcc);
-
-
 
             $orderlog = array(
                 'log_type' => 'Email',
@@ -562,7 +560,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
             );
             $this->db->insert('user_order_log', $orderlog);
 
-            $subject = "Order Confirmation - Your Order with www.shanielfashions.com [" . $order_no . "] has been successfully placed!";
+            $subject = "Order Confirmation - Your Order with John's Perfect Fashion [" . $order_no . "] has been successfully placed!";
             $this->email->subject($subject);
 
             if ($checkcode) {
@@ -673,7 +671,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                 'attrs' => $product_details['attrs'],
                 'vendor_id' => $product_details['user_id'],
                 'total_price' => $product_details['price'],
-                'file_name' => custome_image_server . "/output/" . $product_details['folder'] . "/cutting20001.png",
+                'file_name' => custome_image_server . "coman/output/" . $product_details['folder'] . "/cutting20001.png",
                 'quantity' => $quantity,
                 'user_id' => $user_id,
                 'item_id' => $item_id,
@@ -740,7 +738,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                     'attrs' => $product_details['attrs'],
                     'vendor_id' => $product_details['user_id'],
                     'total_price' => $product_details['price'],
-                    'file_name' => custome_image_server . "/output/" . $product_details['folder'] . "/cutting20001.png",
+                    'file_name' => custome_image_server . "coman/output/" . $product_details['folder'] . "/cutting20001.png",
                     'quantity' => 1,
                     'item_id' => $item_id,
                     'item_name' => $item_name,
@@ -774,7 +772,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                 'attrs' => $product_details['attrs'],
                 'vendor_id' => $product_details['user_id'],
                 'total_price' => $value['total_price'],
-                'file_name' => custome_image_server . "/output/" . $product_details['folder'] . "/cutting20001.png",
+                'file_name' => custome_image_server . "coman/output/" . $product_details['folder'] . "/cutting20001.png",
                 'quantity' => $quantity,
                 'user_id' => $user_id,
                 'item_id' => $item_id,
@@ -818,7 +816,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                 'attrs' => $product_details['attrs'],
                 'vendor_id' => $product_details['user_id'],
                 'total_price' => $value['total_price'],
-                'file_name' => custome_image_server . "/output/" . $product_details['folder'] . "/cutting20001.png",
+                'file_name' => custome_image_server . "coman/output/" . $product_details['folder'] . "/cutting20001.png",
                 'quantity' => $quantity,
                 'user_id' => 'guest',
                 'item_id' => $item_id,

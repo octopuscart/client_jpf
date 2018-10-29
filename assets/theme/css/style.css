@@ -1981,8 +1981,8 @@ p.quote {
     color: #1565c0;
 }
 .mail-bottom input[type="text"], .mail-bottom input[type="email"] {
-    width: 32.9%;
-    float: left;
+/*    width: 32.9%;
+    float: left;*/
 }
 .mail-bottom textarea {
     min-height: 200px;

@@ -17,10 +17,10 @@
             <div class="col-md-3 footer-grid">
                 <h4>Shop Now</h4>
                 <ul>
-                    <li><a href="#">Suit</a></li>
-                    <li><a href="#">Shirt</a></li>
-                    <li><a href="#"> Jacket </a></li>
-                    <li><a href="#"> Pant </a></li>
+                    <li><a href="#">Suits</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#"> Jackets </a></li>
+                    <li><a href="#"> Pants </a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
@@ -36,7 +36,7 @@
             <div class="col-md-3 footer-grid foot">
                 <h4>Contacts</h4>
                 <ul>
-                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="https://goo.gl/maps/cPnGNhfK69m">Shop# 13, G/F, Wing Lee Building,<br/> 27-33 Kimberley Rd, Tsim Sha Tsui,<br/> Hong Kong</a></li>
+                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="https://goo.gl/maps/cPnGNhfK69m">Shop# 13, G/F, <br/>Wing Lee Building,<br/> 27-33 Kimberley Rd, Tsim Sha Tsui,<br/> Hong Kong</a></li>
                     <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">+(852) 6626 4429</a></li>
                     <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> john@perfectfashion.com.hk</a></li>
 

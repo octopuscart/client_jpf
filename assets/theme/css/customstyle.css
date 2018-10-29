@@ -417,3 +417,19 @@ thead td.cart-form-heading {
     border-color: #ddd;
     margin-bottom: 10px;
 }
+
+
+.text_field {
+    background: none;
+    border: 1px solid #D9D9D9;
+    color: #A3A3A3;
+    padding: 13px 10px;
+    font-size: 14px;
+    outline: none;
+    width: 100%!important;
+   margin: 10px 6px!important;
+}
+
+.text_field input[type="email"]{
+    
+}
