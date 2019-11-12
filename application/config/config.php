@@ -33,7 +33,7 @@ switch ($baselink) {
     case "http://localhost":
         $baselinkmain = $baselink . $configuration['localpath'];
         break;
-    case "http://192.168.1.2":
+    case "http://192.168.1.3":
         $baselinkmain = $baselink .  $configuration['localpath'];
         break;
     default:

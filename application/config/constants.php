@@ -9,10 +9,10 @@ $baselink = 'http://' . $_SERVER['SERVER_NAME'];
 $baselink = 'http://' . $_SERVER['SERVER_NAME'];
 switch ($baselink) {
     case "http://localhost":
-        $baselinkmain = $baselink . '/bespoketailorhkadmin';
+        $baselinkmain = $baselink . '/johnsperfectfashions';
         break;
-    case "http://192.168.1.2":
-        $baselinkmain = $baselink . '/bespoketailorhkadmin';
+    case "http://192.168.1.3":
+        $baselinkmain = $baselink . '/johnsperfectfashions';
         break;
     default:
         $baselinkmain = $configuration['site_url'];

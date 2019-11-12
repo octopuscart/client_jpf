@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/custom_style.css">
 
 
-      
+
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -45,14 +45,14 @@
         <!--search jQuery-->
         <script src="<?php echo base_url(); ?>assets/theme/js/responsiveslides.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
-        
-          <!--sweet alert-->
+
+        <!--sweet alert-->
         <script src="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.js"></script>
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.css">
 
         <!--angular js-->
         <script src="<?php echo base_url(); ?>assets/theme/angular/angular.min.js"></script>
-        
+
         <!--mycart-->
         <script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/bootstrap-3.1.1.min.js"></script>
         <!-- cart -->
@@ -61,32 +61,32 @@
         <!--start-rate-->
         <script src="<?php echo base_url(); ?>assets/theme/js/jstarbox.js"></script>
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
-       
-                <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.css">
+
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.css">
         <script src="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.js" type="text/javascript"></script>
 
 
-        
-        
+
+
         <script type="text/javascript">
             jQuery(function () {
-                jQuery('.starbox').each(function () {
-                    var starbox = jQuery(this);
-                    starbox.starbox({
-                        average: starbox.attr('data-start-value'),
-                        changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
-                        ghosting: starbox.hasClass('ghosting'),
-                        autoUpdateAverage: starbox.hasClass('autoupdate'),
-                        buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
-                        stars: starbox.attr('data-star-count') || 5
-                    }).bind('starbox-value-changed', function (event, value) {
-                        if (starbox.hasClass('random')) {
-                            var val = Math.random();
-                            starbox.next().text(' ' + val);
-                            return val;
-                        }
-                    })
-                });
+            jQuery('.starbox').each(function () {
+            var starbox = jQuery(this);
+            starbox.starbox({
+            average: starbox.attr('data-start-value'),
+                    changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
+                    ghosting: starbox.hasClass('ghosting'),
+                    autoUpdateAverage: starbox.hasClass('autoupdate'),
+                    buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
+                    stars: starbox.attr('data-star-count') || 5
+            }).bind('starbox-value-changed', function (event, value) {
+            if (starbox.hasClass('random')) {
+            var val = Math.random();
+            starbox.next().text(' ' + val);
+            return val;
+            }
+            })
+            });
             });
         </script>
         <!--//End-rate-->
@@ -102,12 +102,12 @@
                 //$interpolateProvider.startSymbol('{$');
                 //$interpolateProvider.endSymbol('$}');
                 $httpProvider.defaults.headers.common = {};
-                        $httpProvider.defaults.headers.post = {};
+                $httpProvider.defaults.headers.post = {};
                 });
-                        var baseurl = "<?php echo base_url(); ?>index.php/";
-                        var imageurlg = "<?php echo imageserver; ?>";
-                        var globlecurrency = "<?php echo globle_currency;?>";
-                        var avaiblecredits = 0;</script>
+                var baseurl = "<?php echo base_url(); ?>index.php/";
+                var imageurlg = "<?php echo imageserver; ?>";
+                var globlecurrency = "<?php echo globle_currency; ?>";
+                var avaiblecredits = 0;</script>
             <!--header-->
             <div class="header">
                 <div class="header-top">
@@ -168,6 +168,10 @@
                                                     <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pants</a></li>
                                                 </ul>
                                             </li>
+
+
+                                            <li><a href="<?php echo site_url('Shop/measurements_guide'); ?>">Measurement Guide</a></li>
+
                                             <li><a href="<?php echo site_url('Shop/clients'); ?>">Our Clients </a></li>
                                             <li><a href="<?php echo site_url('Shop/contactus'); ?>">Contact Us</a></li>
                                         </ul>
@@ -179,7 +183,7 @@
                                 <div class="cart box_1" style="    margin-top: 10px;">
                                     <a href="<?php echo site_url("Cart/details"); ?>">
                                         <h3> <div class="total">
-                                                <span class="simpleCart_total1">{{globleCartData.total_price|currency:"<?php echo globle_currency;?> "}}</span> (<span  class="simpleCart_quantity1">{{globleCartData.total_quantity}}</span> items)</div>
+                                                <span class="simpleCart_total1">{{globleCartData.total_price|currency:"<?php echo globle_currency; ?> "}}</span> (<span  class="simpleCart_quantity1">{{globleCartData.total_quantity}}</span> items)</div>
                                             <img src="<?php echo base_url(); ?>assets/theme/images/bag.png" alt="" />
                                         </h3>
                                     </a>
