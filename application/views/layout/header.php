@@ -188,7 +188,7 @@
                             </div>
 
                             <div class="header-right2">
-                                <div class="cart box_1" style="    margin-top: 10px;">
+                                <div class="cart box_1" style="    margin-top: 5px;">
                                     <a href="<?php echo site_url("Cart/details"); ?>">
                                         <h3> <div class="total">
                                                 <span class="simpleCart_total1">{{globleCartData.total_price|currency:"<?php echo globle_currency; ?> "}}</span> (<span  class="simpleCart_quantity1">{{globleCartData.total_quantity}}</span> items)</div>
