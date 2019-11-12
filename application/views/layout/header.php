@@ -65,7 +65,13 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.css">
         <script src="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.js" type="text/javascript"></script>
 
-
+        <style>
+               .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+}
+        </style>
 
 
         <script type="text/javascript">

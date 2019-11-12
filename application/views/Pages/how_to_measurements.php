@@ -129,11 +129,7 @@ $this->load->view('layout/header');
         height: 100px!important;
     }
     
-    .nav > li > a {
-    position: relative;
-    display: block;
-    padding: 10px 10px;
-}
+ 
 
 
 
