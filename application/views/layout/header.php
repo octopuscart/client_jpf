@@ -70,6 +70,8 @@
     position: relative;
     display: block;
     padding: 10px 10px;
+ 
+    font-size: 15px!important;
 }
         </style>
 
